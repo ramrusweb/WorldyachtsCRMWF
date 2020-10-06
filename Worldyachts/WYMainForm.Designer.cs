@@ -1,6 +1,6 @@
 ﻿namespace Worldyachts
 {
-    partial class Form1
+    partial class WYMainForm
     {
         /// <summary>
         /// Обязательная переменная конструктора.
