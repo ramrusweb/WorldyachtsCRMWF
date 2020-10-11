@@ -47,7 +47,9 @@
             this.priceListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.orderCostToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.wyMainFormMenuStrip.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // wyMainFormMenuStrip
@@ -62,7 +64,7 @@
             this.exitToolStripMenuItem});
             this.wyMainFormMenuStrip.Location = new System.Drawing.Point(0, 0);
             this.wyMainFormMenuStrip.Name = "wyMainFormMenuStrip";
-            this.wyMainFormMenuStrip.Size = new System.Drawing.Size(800, 28);
+            this.wyMainFormMenuStrip.Size = new System.Drawing.Size(632, 28);
             this.wyMainFormMenuStrip.TabIndex = 0;
             this.wyMainFormMenuStrip.Text = "menuStrip1";
             // 
@@ -191,17 +193,30 @@
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(67, 24);
             this.exitToolStripMenuItem.Text = "Выход";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::Worldyachts.Properties.Resources.WY4;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 28);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(632, 415);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
             // WYMainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(632, 443);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.wyMainFormMenuStrip);
             this.MainMenuStrip = this.wyMainFormMenuStrip;
             this.Name = "WYMainForm";
             this.Text = "Worldyachts";
             this.wyMainFormMenuStrip.ResumeLayout(false);
             this.wyMainFormMenuStrip.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -228,6 +243,7 @@
         private System.Windows.Forms.ToolStripMenuItem salesByGoodsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem priceListToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem orderCostToolStripMenuItem;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
