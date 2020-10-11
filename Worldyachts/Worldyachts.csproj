@@ -61,6 +61,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Features\MessageBoxModified\MsgBoxMainScreenMainMenu.cs" />
     <Compile Include="WYMainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,5 +120,6 @@
   <ItemGroup>
     <None Include="Resources\4.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
