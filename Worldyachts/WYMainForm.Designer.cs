@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.wyMainFormMenuStrip = new System.Windows.Forms.MenuStrip();
             this.staffToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.employeeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aListOfEmployeesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -41,30 +41,30 @@
             this.viewOrdersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ordersByEmployeeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.realizationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toPrintToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addSaleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salesByGoodsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toPrintToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.priceListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.orderCostToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip1.SuspendLayout();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.wyMainFormMenuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
-            // menuStrip1
+            // wyMainFormMenuStrip
             // 
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.wyMainFormMenuStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.wyMainFormMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.staffToolStripMenuItem,
             this.yachtsToolStripMenuItem,
             this.bookingToolStripMenuItem,
             this.realizationToolStripMenuItem,
             this.toPrintToolStripMenuItem,
             this.exitToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 30);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
+            this.wyMainFormMenuStrip.Location = new System.Drawing.Point(0, 0);
+            this.wyMainFormMenuStrip.Name = "wyMainFormMenuStrip";
+            this.wyMainFormMenuStrip.Size = new System.Drawing.Size(800, 28);
+            this.wyMainFormMenuStrip.TabIndex = 0;
+            this.wyMainFormMenuStrip.Text = "menuStrip1";
             // 
             // staffToolStripMenuItem
             // 
@@ -73,7 +73,7 @@
             this.aListOfEmployeesToolStripMenuItem,
             this.specializationToolStripMenuItem});
             this.staffToolStripMenuItem.Name = "staffToolStripMenuItem";
-            this.staffToolStripMenuItem.Size = new System.Drawing.Size(92, 26);
+            this.staffToolStripMenuItem.Size = new System.Drawing.Size(92, 24);
             this.staffToolStripMenuItem.Text = "Персонал";
             // 
             // employeeToolStripMenuItem
@@ -100,7 +100,7 @@
             this.productToolStripMenuItem,
             this.productTypeToolStripMenuItem});
             this.yachtsToolStripMenuItem.Name = "yachtsToolStripMenuItem";
-            this.yachtsToolStripMenuItem.Size = new System.Drawing.Size(56, 26);
+            this.yachtsToolStripMenuItem.Size = new System.Drawing.Size(56, 24);
             this.yachtsToolStripMenuItem.Text = "Яхты";
             // 
             // productToolStripMenuItem
@@ -122,7 +122,7 @@
             this.viewOrdersToolStripMenuItem,
             this.ordersByEmployeeToolStripMenuItem});
             this.bookingToolStripMenuItem.Name = "bookingToolStripMenuItem";
-            this.bookingToolStripMenuItem.Size = new System.Drawing.Size(128, 26);
+            this.bookingToolStripMenuItem.Size = new System.Drawing.Size(128, 24);
             this.bookingToolStripMenuItem.Text = "Бронирование";
             // 
             // newOrderToolStripMenuItem
@@ -149,23 +149,8 @@
             this.addSaleToolStripMenuItem,
             this.salesByGoodsToolStripMenuItem});
             this.realizationToolStripMenuItem.Name = "realizationToolStripMenuItem";
-            this.realizationToolStripMenuItem.Size = new System.Drawing.Size(105, 26);
+            this.realizationToolStripMenuItem.Size = new System.Drawing.Size(105, 24);
             this.realizationToolStripMenuItem.Text = "Реализация";
-            // 
-            // toPrintToolStripMenuItem
-            // 
-            this.toPrintToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.priceListToolStripMenuItem,
-            this.orderCostToolStripMenuItem});
-            this.toPrintToolStripMenuItem.Name = "toPrintToolStripMenuItem";
-            this.toPrintToolStripMenuItem.Size = new System.Drawing.Size(93, 26);
-            this.toPrintToolStripMenuItem.Text = "На печать";
-            // 
-            // exitToolStripMenuItem
-            // 
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(67, 26);
-            this.exitToolStripMenuItem.Text = "Выход";
             // 
             // addSaleToolStripMenuItem
             // 
@@ -179,29 +164,44 @@
             this.salesByGoodsToolStripMenuItem.Size = new System.Drawing.Size(242, 26);
             this.salesByGoodsToolStripMenuItem.Text = "Продажи по товарам";
             // 
+            // toPrintToolStripMenuItem
+            // 
+            this.toPrintToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.priceListToolStripMenuItem,
+            this.orderCostToolStripMenuItem});
+            this.toPrintToolStripMenuItem.Name = "toPrintToolStripMenuItem";
+            this.toPrintToolStripMenuItem.Size = new System.Drawing.Size(93, 24);
+            this.toPrintToolStripMenuItem.Text = "На печать";
+            // 
             // priceListToolStripMenuItem
             // 
             this.priceListToolStripMenuItem.Name = "priceListToolStripMenuItem";
-            this.priceListToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.priceListToolStripMenuItem.Size = new System.Drawing.Size(215, 26);
             this.priceListToolStripMenuItem.Text = "Прайс-лист";
             // 
             // orderCostToolStripMenuItem
             // 
             this.orderCostToolStripMenuItem.Name = "orderCostToolStripMenuItem";
-            this.orderCostToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.orderCostToolStripMenuItem.Size = new System.Drawing.Size(215, 26);
             this.orderCostToolStripMenuItem.Text = "Стоимость заказа";
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(67, 24);
+            this.exitToolStripMenuItem.Text = "Выход";
             // 
             // WYMainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.menuStrip1);
-            this.MainMenuStrip = this.menuStrip1;
+            this.Controls.Add(this.wyMainFormMenuStrip);
+            this.MainMenuStrip = this.wyMainFormMenuStrip;
             this.Name = "WYMainForm";
             this.Text = "Worldyachts";
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.wyMainFormMenuStrip.ResumeLayout(false);
+            this.wyMainFormMenuStrip.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -209,7 +209,7 @@
 
         #endregion
 
-        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.MenuStrip wyMainFormMenuStrip;
         private System.Windows.Forms.ToolStripMenuItem staffToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem employeeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aListOfEmployeesToolStripMenuItem;
